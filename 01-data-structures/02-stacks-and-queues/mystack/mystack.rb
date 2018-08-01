@@ -17,7 +17,7 @@ class MyStack
     else
       popped = @stack.last
       @stack.delete_at(@stack.length-1)
-      @stack.empty? ? self.top = nil : self.top = @stack[@stack.length-1] 
+      @stack.empty? ? self.top = nil : self.top = @stack[@stack.length-1]
       return popped
     end
   end
