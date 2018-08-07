@@ -1,0 +1,26 @@
+1. How does your data structure allow developers to access and manipulate the data?
+2. If a developer wanted to find a specific element in your data structure, how would you search for it?
+3. What other real-world data can each structure represent?
+
+Line
+> Developers can use the join and leave functions to have people join and leave
+the line with the person as a parameter. Having a person join the line puts them
+at the back of the line. And to have the front/back of the line leave (making a
+queue or stack) we can use the front and back functions within the leave
+function as a parameter.
+> There is a search function that takes a person as a parameter and returns
+whether or not they are in the line.
+> The data structure could represent a series of cans in a soda vending
+machine. It could also represent a stack of books where they are laid on top of
+each other.
+
+Screen & Pixel
+> Pixels are created using their values for Red, Green, and Blue along with
+their x and y positions as parameters. A screen is created with the height and
+width given as parameters. Pixels can be added to the screen using the pixel,
+and its x and y positions on the screen as parameters.
+> Pixels can be searched for using their x and y positions using the at
+function.
+> The screen could possibly represent a classroom's seating chart (5 x 5
+possibly), with each student represented by a unique color. It could also
+represent a checkerboard.
