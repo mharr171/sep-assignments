@@ -1,0 +1,19 @@
+sort type       | user      | system    | total     | real
+----------------|-----------|-----------|-----------|-----------
+insertion sort  | 0.000000  | 0.000000  | 0.000000  | (0.000102)
+selection sort  | 0.000000  | 0.000000  | 0.000000  | (0.000156)
+bubble sort     | 0.000000  | 0.000000  | 0.000000  | (0.000013)
+merge sort      | 0.000000  | 0.000000  | 0.000000  | (0.000167)
+quick sort      | 0.000000  | 0.000000  | 0.000000  | (0.000213)
+heap sort       | 0.000000  | 0.000000  | 0.000000  | (0.000083)
+bucket sort     | 0.000000  | 0.000000  | 0.000000  | (0.000186)
+
+
+Ordered by Speed, Fastest to Slowest, sorting identical collections of 50 items
+1. bubble sort
+2. heap sort
+3. insertion sort
+4. selection sort
+5. merge sort
+6. bucket sort
+7. quick sort
