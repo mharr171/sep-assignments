@@ -1,0 +1,57 @@
+1. Loading dishwasher
+  WHILE dishwasher is not full AND there are dirty dishes in the sink
+    Scrape off excess food
+    Rinse dish in hot water
+    Place in dishwasher
+  ENDWHILE
+
+2. Putting toothpaste on toothbrush
+  Pick up toothbrush head with non-dominant hand
+  Pick up toothbrush base with dominant hand
+  Attach toothbrush head and base
+  Place toothbrush down
+  Pick up toothpaste with non-dominant hand
+  REPEAT
+    Twist toothpaste cap counter-clockwise with dominant hand
+  UNTIL cap is off toothpaste
+  Place cap down
+  Switch toothpaste to dominant hand
+  Pick up toothbrush with non-dominant hand
+  Place toothpaste tip on toothbrush head
+  REPEAT
+    Squeeze toothpaste
+  UNTIL toothpaste covers toothbrush head
+  Place toothbrush down
+  Switch toothpaste to non-dominant hand
+  Pick up cap with dominant hand
+  Place cap directly over toothpaste tip
+  REPEAT
+    Twist toothpaste cap clockwise with dominant hand
+  UNTIL cap no longer turns
+  Place toothpaste down
+
+3. Leaving my house
+  Exit room
+  Close room door
+  Lock room door
+  Turn around
+  REPEAT
+    Walk forward
+  UNTIL you are obstructed
+  Turn right 90 degrees
+  REPEAT
+    Walk forward
+  UNTIL you are parallel with front door
+  Turn left 90 degrees
+  REPEAT
+    Walk forward
+  UNTIL you are front door
+  Open front door
+  Exit house
+  Close front door
+  Lock front door
+  Turn around
+  Open front gate
+  Exit Entryway
+  Close front gate
+  Lock front gate
