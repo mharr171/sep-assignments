@@ -1,6 +1,7 @@
 require_relative 'node'
 
 class BinarySearchTree
+  attr_reader :root
 
   def initialize(root)
     @root = root

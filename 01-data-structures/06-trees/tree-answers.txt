@@ -1,0 +1,58 @@
+1. Print both Trees to the console and compare the difference between your Binary Search Tree and your Heap.
+
+BINARY SEARCH TREE
+The Matrix: 87
+Pacific Rim: 72
+The Shawshank Redemption: 91
+Star Wars: Return of the Jedi: 80
+District 9: 90
+Star Wars: A New Hope: 93
+Braveheart: 78
+Inception: 86
+The Martian: 92
+Mad Max 2: The Road Warrior: 98
+Donnie Darko: 85
+Star Wars: The Empire Strikes Back: 94
+
+MIN BINARY HEAP
+Pacific Rim: 72
+Donnie Darko: 85
+Braveheart: 78
+The Matrix: 87
+Inception: 86
+Star Wars: Return of the Jedi: 80
+Mad Max 2: The Road Warrior: 98
+Star Wars: The Empire Strikes Back: 94
+The Martian: 92
+The Shawshank Redemption: 91
+District 9: 90
+Star Wars: A New Hope: 93
+
+Printing a min binary heap does a better job of representing the heap itself
+when compared to printing a binary search tree because a binary search tree may
+not be a complete tree.
+
+2. Insert all numbers from 1 to 10,000 into both Trees, then use Benchmark to compare performance:
+How much time does an average insertion consume in the Binary Search Tree compared to the Heap?
+The average binary search tree insertion takes more than twice the amount of
+time compared to inserting into a min binary heap. Although it should be noted
+that, this test was done with numbers being added sequentially from 1 to 10,000
+
+How much time does finding 5000 in the Binary Search Tree consume compared to the Heap?
+The average binary search tree find takes about twice the amount of time
+compared to finding in a min binary heap.
+
+How much time does the average deletion consume in a Binary Search Tree compared to the Heap?
+The average min binary heap deletion is slightly faster than the average binary
+search tree deletion.
+
+When would you use a Binary Search Tree and why?
+A BST tree can be useful if you want to be able to quickly find any node within
+the tree but may not know what sort of range of inputs you will have.
+
+When would you use an Heap and why?
+A heap can be useful when you know how it will be used, for example, a min
+binary heap would be useful if it was holding data that it often needs to
+readily access the the heap's root. So depending on the the heap's condition, a
+heap can speed up certain transactions when compared to uses where searching is
+often related to values near the top of the heap.
