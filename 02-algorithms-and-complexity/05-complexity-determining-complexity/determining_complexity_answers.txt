@@ -1,0 +1,41 @@
+1. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> goodbye_world.rb
+O(1) because regardless of n, only a single puts call is made.
+
+2. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> find_largest.rb
+O(n) because every time the function is called, the algorithm will loop through
+EVERY item in the collection. This is an iterative, linear algorithm.
+
+3. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> find_largest_2D_array.rb
+O(n) because we are iterating over an entire collection with n elements and within that
+iteration we are iterating over a subcollection with m elements. The logarithms
+run time will be linearly proportionate to the number of items in the collection
+plus the number of items within the subcollections.
+
+4. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> numbers_recurive.rb
+If n is negative, this algorithm will run forever. This can be fixed by
+adjusting the first equality check from (n == 0) to (n <= 0). Otherwise O(n^2)
+can be assumed. The first part of this algorithm runs in constant time, but at
+the end of the algorithm, two recursive calls are made. So for every call made
+unless the function runs in constant time, we end up dealing with n^2 more calls
+being made.
+
+5. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> numbers_iterative.rb
+O(n) because this algorithm runs either in constant time if n > 1, or (n-1)
+times otherwise.
+
+6. What's the Big-O of the following algorithm? Submit your work and reasoning
+with your solution.
+Algorithm -> sort.rb
+O(n^2), this is a quick sort. In the worst case, when a pivot is picked at an
+extreme and the collection is already sorted, each item will need to be compared
+n-1 other items.
