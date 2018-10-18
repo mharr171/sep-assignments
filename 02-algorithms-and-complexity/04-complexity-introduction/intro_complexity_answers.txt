@@ -1,0 +1,68 @@
+1. Describe an analogy for relating an algorithm that has efficiency O(1) and
+another algorithm that has O(2^n)
+In terms of efficiency O(1) is incredibly fast like flying over the US in a
+commercial airplane with your 10lb luggage. Your flight will be just as fast
+if you bring a 50lb luggage or 200lbs worth of luggage. O(2^n) would be more
+like riding a bicycle or even walking, the more weight you have the slower you
+will travel. Walking would be a great example because of how quickly you would
+lose speed by increasing your added weight. Biking may be more like O(n^2).
+
+2. In plain English, what is the best case scenario for binary search?
+The best case scenario for binary search is constant or O(1), meaning the search
+is completed on its first iteration.
+
+3. In plain English, what is the worst-case scenario for binary search?
+The worst-case scenario for binary search is that the item we are searching for
+is in the last index spot or not in the collection at all, meaning we have a
+worst-case scenario of Ω(log n)
+
+4. In plain English, what is the bounded-case scenario for binary search?
+The bounded-case scenario for binary search would be between constant (best case) and
+logarithmic (worst-case) time.
+
+5. Create a graph using the data from the CSV
+loglinear.png
+
+6. What is the limit of the function above as n approaches infinity?
+The limit as n approaches infinity is infinity.
+
+7. What is the Big-O of an algorithm that has the data points above?
+Assuming the graph shows us the worst-case scenario, O(2^n)
+
+8. Write a Ruby method that takes a number n. This method must print the
+worst-case number of iterations for linear search to find an item in collections
+of size one to n. Use it to generate a table of worst-case iterations of
+collections up to size 10
+
+def linear_worst_case(n)
+  puts n.to_s + " iteration(s) when n = " + n.to_s
+end
+
+for i in (1..10)
+  linear_worst_case(i)
+end
+
+OUTPUT:
+1 iteration(s) when n = 1
+2 iteration(s) when n = 2
+3 iteration(s) when n = 3
+4 iteration(s) when n = 4
+5 iteration(s) when n = 5
+6 iteration(s) when n = 6
+7 iteration(s) when n = 7
+8 iteration(s) when n = 8
+9 iteration(s) when n = 9
+10 iteration(s) when n = 10
+
+9. Create a graph from the output using Google Sheets or other graphing
+software. Analyze the graph and denote its Big-O somewhere on the graph.
+linear.png
+
+10. What is the Big-O of binary search?
+O(log n)
+
+11. What is the Big-Ω of binary search?
+Ω(1)
+
+12. What is the Big-Ө of binary search?
+Ө(log n)
