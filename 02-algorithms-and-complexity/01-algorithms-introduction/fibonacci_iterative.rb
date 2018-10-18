@@ -1,5 +1,4 @@
 def fib(n)
-  return 0 if n == 0
   fib_0 = 0
   fib_1 = 1
 
