@@ -21,11 +21,20 @@ plus the number of items within the subcollections.
 with your solution.
 Algorithm -> numbers_recurive.rb
 If n is negative, this algorithm will run forever. This can be fixed by
-adjusting the first equality check from (n == 0) to (n <= 0). Otherwise O(n^2)
+adjusting the first equality check from (n == 0) to (n <= 0). Otherwise O(2^n)
 can be assumed. The first part of this algorithm runs in constant time, but at
-the end of the algorithm, two recursive calls are made. So for every call made
-unless the function runs in constant time, we end up dealing with n^2 more calls
-being made.
+the end of the algorithm, two recursive calls are made. This has a time O(2^n)
+because as the number n increases, the amount of recursions increases
+exponentially.
+
+n = 0, 1 call, f(0), returns 0
+n = 1, 1 call, f(1), returns 1
+n = 2, 3 calls, f(2)=> f(1) + f(0), returns 1
+n = 3, 5 calls, f(3)=> [f(2)=> f(1) + f(0)] + f(1), returns 2
+n = 4, 9 calls, f(4)=> [f(3)=> [f(2)=> f(1) + f(0)] + f(1)] + [f(2)=> f(1) +
+f(0)], returns 3
+n = 5, 15 calls, f(5)=> [f(4)=> [f(3)=> [f(2)=> f(1) + f(0)] + f(1)] + [f(2)=>
+f(1) + f(0)]] + [f(3)=> [f(2)=> f(1) + f(0)] + f(1)], returns 5
 
 5. What's the Big-O of the following algorithm? Submit your work and reasoning
 with your solution.
