@@ -1,0 +1,20 @@
+                    user       system     total     real
+original code       1.540000   0.000000   1.540000  (  1.559525)
+code optimization   1.310000   0.010000   1.320000  (  1.320237)
+time optimization   0.270000   0.130000   0.400000  (  0.395520)
+space optimization  0.000000   0.000000   0.000000  (  0.002098)
+
+
+Code Optimization
+The code optimized version runs in O(n^2) time. As we are looping through the
+combined_array and then looping through our sorted array to find its proper
+position. At its worst it is looping through n items and again through (n-1)
+items.
+
+Time Optimization
+The code was simply changed to a merge sort, changing our worst case scenario to
+run in loglinear time or O(n log n).
+
+Space Optimization
+This code uses ruby's default array sort function which uses a quick sort method.
+Quick sort runs in loglinear time or O(n log n) time.
