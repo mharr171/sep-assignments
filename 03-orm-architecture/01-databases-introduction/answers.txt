@@ -1,0 +1,36 @@
+SQL: SELECT * FROM post
+ORM: post = Post.all.first
+
+1. remove duplicates in a query response
+SQL: SELECT DISTINCT FROM post;
+ORM: posts = Post.all.uniq
+
+2. filter records using inequalities, pattern matching, ranges, and boolean logic
+SQL: SELECT * FROM post WHERE post_id < 5;
+ORM: posts = Post.where('post_id < 5')
+
+3. sort records in a particular order
+SQL: SELECT * FROM post ORDER BY user_id DESC;
+ORM: posts = Post.all.order(user_id: :desc)
+
+4. limit the number of records returned
+SQL: SELECT * FROM post LIMIT 5;
+ORM: posts = Post.all.limit(5)
+
+5. group records into sections
+SQL: SELECT post_id FROM post GROUP BY user_id;
+ORM: posts = Post.all.group(:user_id)
+
+6. perform calculations using aggregate functions
+SQL: SELECT COUNT(*) FROM post
+ORM: post_count = Post.count
+
+7. join tables using cross join, inner join, and outer join
+SQL: SELECT full_name FROM user CROSS JOIN post;
+ORM: cross_join = Post.each{ |p| [p.title,User.each{|u| u.full_name}].join(" ")}
+
+SQL: SELECT * FROM post INNER JOIN user ON post.user_id = user.id;
+ORM: inner_join = User.joins(:posts)
+
+SQL: SELECT * from post LEFT OUTER JOIN comment ON post.user_id = comment.user_id;
+ORM: outer_join = Post.joins(:comment)
